@@ -35,3 +35,7 @@ lcov.*
 
 # Ignore make include files
 *.mk
+
+# Generated local FABM builds
+/build_fabm*/
+!build_fabm_sis2.sh

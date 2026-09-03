@@ -24,6 +24,8 @@ should be registered at
 Issues specific to the MOM6 source code should be registered at
 [MOM6 issues](https://github.com/NOAA-GFDL/MOM6/issues).
 
+FABM compatibility and coupled test instructions are in [FABM_PORT.md](FABM_PORT.md).
+
 Issues specific to the SIS2 source code should be registered at
 [SIS2 issues](https://github.com/NOAA-GFDL/SIS2/issues).
 
