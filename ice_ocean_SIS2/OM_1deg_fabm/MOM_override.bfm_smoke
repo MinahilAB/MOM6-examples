@@ -1,0 +1,5 @@
+! Minimal BFM/OGS smoke-test override.
+! No FABM_INITIAL_CONDITIONS_FILE: N3_n is initialized from fabm_bfm_smoke.yaml.
+USE_FABM_TRACERS = True
+FABM_CONFIG_FILE = "fabm_bfm_smoke.yaml"
+FABM_LIGHT_ATTENUATION = 0.04

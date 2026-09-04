@@ -1,0 +1,7 @@
+OM_1deg BFM/OGS smoke test
+1958 1 1 0 0 0
+
+"ocean_bfm_smoke_%4yr_%3dy", 1,"days",1,"days","Time",1,"years"
+
+"ocean_model","N3_n","N3_n","ocean_bfm_smoke_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","fabm_N3_n_source","fabm_N3_n_source","ocean_bfm_smoke_%4yr_%3dy","all",.false.,"none",2

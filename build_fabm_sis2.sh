@@ -23,6 +23,13 @@ elif [[ -e "${FABM_ROOT}/lib64/libfabm.a" || -e "${FABM_ROOT}/lib64/libfabm.so" 
 elif [[ -e "${FABM_ROOT}/lib/libfabm.a" || -e "${FABM_ROOT}/lib/libfabm.so" ]]; then fabm_libdir="${FABM_ROOT}/lib"
 else echo "ERROR: libfabm not found under FABM_ROOT." >&2; exit 2; fi
 
+# BFM/OGS installs libadj beside libfabm. It must follow libfabm when
+# linking static archives; ordinary FABM installations keep -lfabm alone.
+fabm_extra_libs=""
+if [[ -e "${fabm_libdir}/libadj.a" || -e "${fabm_libdir}/libadj.so" ]]; then
+  fabm_extra_libs=" -ladj"
+fi
+
 fms_build="${build_dir}/fms"
 mom_build="${build_dir}/mom"
 mkdir -p "${fms_build}" "${mom_build}"
@@ -43,7 +50,7 @@ perl -pe "s!\Q../../../MOM6\E!${mom6_root}!g" \
   cd "${mom_build}"
   "${mkmf}" -t "${mk_template}" -p MOM6 \
     -o "-I../fms -I${FABM_ROOT}/include" \
-    -l "-L../fms -lfms -L${fabm_libdir} -lfabm" \
+    -l "-L../fms -lfms -L${fabm_libdir} -lfabm${fabm_extra_libs}" \
     -c "-Duse_libMPI -Duse_netCDF -DSPMD -D_FABM_ -DUSE_LOG_DIAG_FIELD_INFO -Duse_AM3_physics -D_USE_LEGACY_LAND_" \
     path_names
   make -j "${jobs}" NETCDF=3 MOM6

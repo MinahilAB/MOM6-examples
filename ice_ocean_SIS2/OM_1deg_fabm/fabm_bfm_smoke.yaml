@@ -1,0 +1,15 @@
+# Minimal BFM/OGS smoke test for the MOM6--FABM bridge.
+#
+# This intentionally uses one BFM pelagic state only: nitrate (N3_n).  It is
+# a technical integration test, not a scientifically complete BFM setup.
+# The YAML initial value is used because no FABM_INITIAL_CONDITIONS_FILE is
+# configured for this test. Units are mmol N m-3.
+require_initialization: true
+instances:
+  N3:
+    long_name: nitrate
+    model: ogs/bfm_pelagic_base
+    parameters:
+      composition: n
+    initialization:
+      n: 8.0
