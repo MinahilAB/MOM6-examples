@@ -1,0 +1,82 @@
+{
+  "coordinate_names": {
+    "time": "time",
+    "depth": "depth",
+    "latitude": "latitude",
+    "longitude": "longitude"
+  },
+  "output_variables": {
+    "no3": {
+      "input": "nut",
+      "variable": "no3",
+      "units": "mmol m-3",
+      "long_name": "Copernicus nitrate regridded to MOM6"
+    },
+    "po4": {
+      "input": "nut",
+      "variable": "po4",
+      "units": "mmol m-3",
+      "long_name": "Copernicus phosphate regridded to MOM6"
+    },
+    "si": {
+      "input": "nut",
+      "variable": "si",
+      "units": "mmol m-3",
+      "long_name": "Copernicus dissolved silicate regridded to MOM6"
+    },
+    "fe": {
+      "input": "nut",
+      "variable": "fe",
+      "units": "mmol m-3",
+      "long_name": "Copernicus dissolved iron regridded to MOM6"
+    },
+    "phyc": {
+      "input": "pft",
+      "variable": "phyc",
+      "units": "mmol C m-3",
+      "long_name": "Copernicus total phytoplankton carbon regridded to MOM6"
+    },
+    "chl": {
+      "input": "pft",
+      "variable": "chl",
+      "units": "mg m-3",
+      "long_name": "Copernicus total chlorophyll-a regridded to MOM6"
+    },
+    "zooc": {
+      "input": "plankton",
+      "variable": "zooc",
+      "units": "mmol C m-3",
+      "long_name": "Copernicus total zooplankton carbon regridded to MOM6"
+    },
+    "o2": {
+      "input": "bio",
+      "variable": "o2",
+      "units": "mmol m-3",
+      "long_name": "Copernicus dissolved oxygen regridded to MOM6"
+    },
+    "nppv": {
+      "input": "bio",
+      "variable": "nppv",
+      "units": "mg m-3 day-1",
+      "long_name": "Copernicus net primary production regridded to MOM6"
+    },
+    "dissic": {
+      "input": "car",
+      "variable": "dissic",
+      "units": "mol m-3",
+      "long_name": "Copernicus dissolved inorganic carbon regridded to MOM6"
+    },
+    "talk": {
+      "input": "car",
+      "variable": "talk",
+      "units": "mol m-3",
+      "long_name": "Copernicus total alkalinity regridded to MOM6"
+    },
+    "ph": {
+      "input": "car",
+      "variable": "ph",
+      "units": "1",
+      "long_name": "Copernicus pH regridded to MOM6"
+    }
+  }
+}
