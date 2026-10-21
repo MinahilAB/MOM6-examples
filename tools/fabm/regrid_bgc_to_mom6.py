@@ -263,7 +263,7 @@ def main() -> None:
             }),
         },
         attrs={
-            "title": "Biogeochemical fields regridded to MOM6 OM_1deg tracer grid",
+            "title": "Biogeochemical fields regridded to MOM6 tracer grid",
             "source_files": "; ".join(source_notes),
             "grid_type": "regular",
             "regridding_notes": (
