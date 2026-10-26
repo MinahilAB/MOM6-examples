@@ -47,7 +47,7 @@ Coupled MOM6--SIS2 build instructions are provided in
 
 ## Software requirements
 
-The Python utilities require Python 3 and the following packages:
+The Python utilities require Python 3.8 or newer and the following packages:
 
 ```text
 numpy
