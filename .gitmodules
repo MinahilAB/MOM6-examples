@@ -3,7 +3,7 @@
 	url = https://github.com/NOAA-GFDL/MOM6.git
 [submodule "src/SIS2"]
 	path = src/SIS2
-	url = https://github.com/NOAA-GFDL/SIS2.git
+	url = git@github.com:MinahilAB/SIS2.git
 [submodule "tools/matlab/gtools"]
 	path = tools/matlab/gtools
 	url = https://github.com/Adcroft/gtools.git
