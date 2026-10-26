@@ -40,7 +40,7 @@ printf "MOM6 source: %s\nFABM prefix: %s\nBuild directory: %s\n" "${mom6_root}" 
 # on scratch), so the manifests must not assume it is below this repository.
 perl -pe "s!\Q../../src/FMS\E!${repo_root}/src/FMS!g" \
   "${repo_root}/config/fabm_sis2/fms_path_names" > "${fms_build}/path_names"
-perl -pe "s!\Q../../../MOM6\E!${mom6_root}!g" \
+perl -pe "s!\Q../../../MOM6\E!${mom6_root}!g; s!\Q../../src/SIS2\E!${repo_root}/src/SIS2!g" \
   "${repo_root}/config/fabm_sis2/mom_sis2_path_names" > "${mom_build}/path_names"
 
 (
