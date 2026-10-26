@@ -36,7 +36,10 @@ mkdir -p "${fms_build}" "${mom_build}"
 printf "MOM6 source: %s\nFABM prefix: %s\nBuild directory: %s\n" "${mom6_root}" "${FABM_ROOT}" "${build_dir}"
 
 # These pinned manifests describe the tested MOM6/SIS2/FMS source layout.
-cp "${repo_root}/config/fabm_sis2/fms_path_names" "${fms_build}/path_names"
+# Substitute absolute source roots: BUILD_DIR may live anywhere (for example,
+# on scratch), so the manifests must not assume it is below this repository.
+perl -pe "s!\Q../../src/FMS\E!${repo_root}/src/FMS!g" \
+  "${repo_root}/config/fabm_sis2/fms_path_names" > "${fms_build}/path_names"
 perl -pe "s!\Q../../../MOM6\E!${mom6_root}!g" \
   "${repo_root}/config/fabm_sis2/mom_sis2_path_names" > "${mom_build}/path_names"
 
