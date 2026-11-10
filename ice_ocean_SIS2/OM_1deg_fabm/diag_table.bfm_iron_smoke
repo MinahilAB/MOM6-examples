@@ -1,0 +1,25 @@
+OM_1deg MOM6--FABM--BFM iron branch, Copernicus initialization test
+1958 1 1 0 0 0
+
+"BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy", 1,"months",1,"days","Time",1,"years"
+
+"ocean_model","N1_p","bfm_N1_p","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","N3_n","bfm_N3_n","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","N4_n","bfm_N4_n","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","N5_s","bfm_N5_s","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","N7_f","bfm_N7_f","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","O2_o","bfm_O2_o","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","O3_c","bfm_O3_c","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","O3h_h","bfm_O3h_h","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","R3_c","bfm_R3_c","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","X3_c","bfm_X3_c","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","P1_Chl","bfm_P1_Chl","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","P2_Chl","bfm_P2_Chl","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","P3_Chl","bfm_P3_Chl","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","P4_Chl","bfm_P4_Chl","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","P5_Chl","bfm_P5_Chl","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","P6_Chl","bfm_P6_Chl","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","P7_Chl","bfm_P7_Chl","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","P8_Chl","bfm_P8_Chl","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","P9_Chl","bfm_P9_Chl","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","fabm_total_chlorophyll","bfm_total_chlorophyll","BFM_OUTPUT/ocean_bfm_iron_%4yr_%3dy","all",.false.,"none",2
