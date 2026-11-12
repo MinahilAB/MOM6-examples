@@ -1,0 +1,10 @@
+! WOA13 temperature/salinity z-space initialization fragment for an OM1-like
+! MOM6 case. Add or substitute these settings in the case's MOM_input file.
+!
+! This is not a complete MOM_input. The WOA13 files must be available below
+! the case INPUT directory (normally through the MOM6-examples .datasets link).
+
+TEMP_Z_INIT_FILE = "woa13_decav_ptemp_monthly_fulldepth_01.nc"
+SALT_Z_INIT_FILE = "woa13_decav_s_monthly_fulldepth_01.nc"
+Z_INIT_FILE_PTEMP_VAR = "ptemp_an"
+Z_INIT_FILE_SALT_VAR = "s_an"

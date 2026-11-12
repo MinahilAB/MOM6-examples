@@ -1,0 +1,32 @@
+# Minimal, portable FABM NPZD example for the MOM6 interior-state bridge.
+#
+# This is a technical starting point, not a calibrated ecosystem setup.
+# MOM6 registers the four interior state variables declared below as tracers:
+#   npzd_nut, npzd_phy, npzd_zoo, npzd_det  [mmol m-3]
+# Their values are used for a cold start when FABM_INITIAL_CONDITIONS_FILE is
+# not set. A MOM6 restart takes precedence over both these values and an IC file.
+instances:
+  npzd:
+    model: gotm/npzd
+    parameters:
+      p0: 0.0225       # background phytoplankton [mmol m-3]
+      z0: 0.0225       # background zooplankton [mmol m-3]
+      kc: 0.03         # light extinction by biomass [m2 mmol-1]
+      i_min: 25.0      # euphotic-zone light threshold [W m-2]
+      rmax: 1.0        # maximum phytoplankton growth [d-1]
+      gmax: 0.2        # maximum grazing [d-1]
+      iv: 1.1          # Ivlev grazing coefficient [m3 mmol-1]
+      alpha: 1.35      # nutrient half-saturation [mmol m-3]
+      rpn: 0.01        # phytoplankton loss to nutrients [d-1]
+      rzn: 0.01        # zooplankton loss to nutrients [d-1]
+      rdn: 0.003       # detritus remineralization [d-1]
+      rpdu: 0.02       # phy mortality in euphotic zone [d-1]
+      rpdl: 0.1        # phy mortality below euphotic zone [d-1]
+      rzd: 0.02        # zooplankton mortality [d-1]
+      w_p: 0.0         # phy vertical velocity; negative is sinking [m d-1]
+      w_d: 0.0         # detritus vertical velocity; negative is sinking [m d-1]
+    initialization:
+      nut: 4.5         # nutrients [mmol m-3]
+      phy: 1.e-15      # phytoplankton [mmol m-3]
+      zoo: 1.e-15      # zooplankton [mmol m-3]
+      det: 4.5         # detritus [mmol m-3]
