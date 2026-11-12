@@ -107,7 +107,9 @@ forcing; it is therefore not a historical atmospheric simulation.
 ## 7. Test ladder
 
 1. Run the KPP NPZD case with `configurations/fabm_npzd.yaml`.
-2. Run a short MOM6--SIS2 FABM smoke test.
+2. Start from the tracked
+   [`OM1 configuration overlay`](../ice_ocean_SIS2/OM_1deg_fabm/README.md),
+   supply the external OM1 data, and run a short MOM6--SIS2 FABM smoke test.
 3. Run the short iron-BFM smoke test using YAML initialization.
 4. Run an annual BFM test using padded annual JRA forcing.
 5. Optionally create a Copernicus-derived initial-condition file with the
