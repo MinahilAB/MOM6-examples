@@ -1,0 +1,21 @@
+"MOM6 FABM BFM example"
+1958 1 1 0 0 0
+
+! Monthly output is appropriate for annual experiments. For a short smoke test
+! use days instead of months; otherwise the only record can be a fill value.
+"ocean_bfm_%4yr_%3dy", 1,"months",1,"days","Time",1,"years"
+
+! Core observed/initialised BFM states used in the iron-enabled example.
+"ocean_model","N1_p","bfm_N1_p","ocean_bfm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","N3_n","bfm_N3_n","ocean_bfm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","N4_n","bfm_N4_n","ocean_bfm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","N5_s","bfm_N5_s","ocean_bfm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","N7_f","bfm_N7_f","ocean_bfm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","O2_o","bfm_O2_o","ocean_bfm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","O3_c","bfm_O3_c","ocean_bfm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","O3h_h","bfm_O3h_h","ocean_bfm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","R3_c","bfm_R3_c","ocean_bfm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","X3_c","bfm_X3_c","ocean_bfm_%4yr_%3dy","all",.false.,"none",2
+
+! Aggregate diagnostic; individual P1_Chl ... P9_Chl may be added as needed.
+"ocean_model","fabm_total_chlorophyll","bfm_total_chlorophyll","ocean_bfm_%4yr_%3dy","all",.false.,"none",2
