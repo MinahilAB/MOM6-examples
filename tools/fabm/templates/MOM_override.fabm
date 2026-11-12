@@ -1,0 +1,19 @@
+! Generic MOM6--FABM interior-state configuration.
+! Copy the active lines into a case-specific MOM_override; do not overwrite
+! the case's existing physics settings blindly.
+
+USE_FABM_TRACERS = True
+FABM_CONFIG_FILE = "fabm_npzd.yaml"
+
+! Required only when MOM6 does not provide shortwave radiation. The value is
+! used as surface PAR [W m-2]. Leave commented for a forced ocean/SIS2 case.
+!FABM_SURFACE_PAR = 100.0
+
+! Optional cold-start NetCDF file. It must contain every active FABM interior
+! state, with the state names and units declared by the YAML file.
+!FABM_INITIAL_CONDITIONS_FILE = "INPUT/fabm_initial_conditions.nc"
+!FABM_INITIAL_CONDITIONS_ON_GRID = True
+
+! A restart always takes precedence over YAML initial values and this IC file.
+! Set True for one CPU-time breakdown of the first FABM update.
+!FABM_PROFILE_FIRST_CALL = True

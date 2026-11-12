@@ -1,0 +1,22 @@
+"MOM6 FABM NPZD example"
+1 1 1 0 0 0
+
+! Daily instantaneous output. Adjust this stream name and frequency for the
+! target experiment; only listed fields are written by MOM6 diagnostics.
+"ocean_fabm_%4yr_%3dy", 1,"days",1,"days","Time",1,"years"
+
+"ocean_model","npzd_nut","npzd_nut","ocean_fabm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","npzd_phy","npzd_phy","ocean_fabm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","npzd_zoo","npzd_zoo","ocean_fabm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","npzd_det","npzd_det","ocean_fabm_%4yr_%3dy","all",.false.,"none",2
+
+! FABM-provided local source terms [state units s-1].
+"ocean_model","fabm_npzd_nut_source","fabm_npzd_nut_source","ocean_fabm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","fabm_npzd_phy_source","fabm_npzd_phy_source","ocean_fabm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","fabm_npzd_zoo_source","fabm_npzd_zoo_source","ocean_fabm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","fabm_npzd_det_source","fabm_npzd_det_source","ocean_fabm_%4yr_%3dy","all",.false.,"none",2
+
+! NPZD diagnostics: PAR [W m-2], gross primary production and net production.
+"ocean_model","fabm_npzd_PAR","fabm_npzd_PAR","ocean_fabm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","fabm_npzd_PPR","fabm_npzd_PPR","ocean_fabm_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","fabm_npzd_NPR","fabm_npzd_NPR","ocean_fabm_%4yr_%3dy","all",.false.,"none",2

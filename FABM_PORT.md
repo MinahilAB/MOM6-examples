@@ -155,6 +155,12 @@ file. They require Python 3.8 or newer plus the packages listed in their
 their own grid, forcing, data licence compliance, timestep, diagnostics, and
 scientific validation.
 
+The end-to-end, case-side reproducibility workflow is documented in
+[`docs/FABM_BFM_TUTORIAL.md`](docs/FABM_BFM_TUTORIAL.md). It explains the
+distinction between YAML initialization, a complete NetCDF cold-start file,
+and MOM6 restart precedence, and links to the tracked configuration and
+diagnostic-table templates.
+
 ## Verification checklist
 
 Before relying on a new installation, perform these checks:

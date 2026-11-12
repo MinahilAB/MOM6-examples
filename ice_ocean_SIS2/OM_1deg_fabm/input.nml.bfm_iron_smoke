@@ -1,17 +1,17 @@
  &MOM_input_nml
-         output_directory = '/g100_scratch/userexternal/mbutt001/mom_test/om1_bfm_iron_copernicus/OUTPUT',
+         output_directory = 'OUTPUT',
          input_filename = 'n'
          restart_input_dir = 'INPUT',
-         restart_output_dir = '/g100_scratch/userexternal/mbutt001/mom_test/om1_bfm_iron_copernicus/RESTART',
+         restart_output_dir = 'RESTART',
          parameter_filename = 'MOM_input',
                               'MOM_override'
 /
 
  &SIS_input_nml
-        output_directory = '/g100_scratch/userexternal/mbutt001/mom_test/om1_bfm_iron_copernicus/OUTPUT/',
+        output_directory = 'OUTPUT/',
         input_filename = 'n'
         restart_input_dir = 'INPUT/',
-        restart_output_dir = '/g100_scratch/userexternal/mbutt001/mom_test/om1_bfm_iron_copernicus/RESTART/',
+        restart_output_dir = 'RESTART/',
         parameter_filename = 'SIS_input',
                              'SIS_override' /
 

@@ -1,0 +1,30 @@
+! Generic MOM6--FABM--BFM configuration for a BFM YAML file.
+! This template is intended for interior-state BFM configurations only.
+
+USE_FABM_TRACERS = True
+FABM_CONFIG_FILE = "fabm_bfm_iron_9pft.yaml"
+
+! The following fallbacks are used only if the MOM6 host does not provide the
+! corresponding field. Coupled MOM6--SIS2 cases normally provide shortwave and
+! instantaneous ice area fraction directly.
+FABM_LIGHT_ATTENUATION = 0.04
+FABM_WIND_SPEED = 0.0
+FABM_SURFACE_AIR_PRESSURE = 101325.0
+FABM_ATMOSPHERIC_CO2 = 420.0
+FABM_ICE_AREA_FRACTION = 0.0
+
+! Exclude thin contracted MOM6 layers from FABM and fail clearly if an
+! unusually fast BFM sinking velocity requires too many transport substeps.
+FABM_CONTRACTED_LAYER_BUG = False
+FABM_MINIMUM_ACTIVE_THICKNESS = 0.1
+FABM_MAXIMUM_VERTICAL_SUBSTEPS = 100
+
+! Full BFM configurations register many tracer and restart fields.
+MAX_FIELDS = 128
+
+! Uncomment for a cold start from a complete BFM IC file.
+!FABM_INITIAL_CONDITIONS_FILE = "INPUT/fabm_bfm_initial_conditions.nc"
+!FABM_INITIAL_CONDITIONS_ON_GRID = True
+
+! Optional one-call performance report on the root MPI rank.
+!FABM_PROFILE_FIRST_CALL = True
