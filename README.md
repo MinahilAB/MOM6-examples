@@ -14,6 +14,11 @@ for analysis and preprocessing.
 To find information, start at the
 [MOM6-examples wiki](https://github.com/NOAA-GFDL/MOM6-examples/wiki).
 
+This fork additionally provides a
+[MOM6--FABM--BFM Wiki](https://github.com/MinahilAB/MOM6-examples/wiki)
+covering the FABM bridge, coupled builds, external data, initial conditions,
+BFM, and reproducible example workflows.
+
 For general inquiries about using MOM6 and affiliated models, use the
 [CESM MOM6 forums](https://bb.cgd.ucar.edu/cesm/forums/mom6.148/).
 
@@ -24,7 +29,9 @@ should be registered at
 Issues specific to the MOM6 source code should be registered at
 [MOM6 issues](https://github.com/NOAA-GFDL/MOM6/issues).
 
-FABM compatibility and coupled test instructions are in [FABM_PORT.md](FABM_PORT.md).
+FABM compatibility and coupled test instructions are in
+[FABM_PORT.md](FABM_PORT.md). The end-to-end case workflow is in the
+[FABM--BFM reproducibility tutorial](docs/FABM_BFM_TUTORIAL.md).
 
 Issues specific to the SIS2 source code should be registered at
 [SIS2 issues](https://github.com/NOAA-GFDL/SIS2/issues).
